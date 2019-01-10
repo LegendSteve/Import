@@ -7,9 +7,12 @@ var gid = function(name) {return document.getElementById(name)};
 
 var inputs = document.getElementsByClassName("inputs");
 
+console.log(inputs);
+
 for(i = 0; i < inputs.length; i++){
     var input = inputs[i];
 
+    console.log(input.getAttribute("data-test"))
     switch(input.getAttribute("data-test")){
         case "first-name-input": input.value = "StefanBitches"; break;
     }
