@@ -3,6 +3,20 @@ function zahl(){
     alert(zahl);
 }
 
+var gid = function(name) {return document.getElementById(name)};
+
+var inputs = document.getElementsByClassName("inputs");
+
+for(i = 0; i < inputs.length; i++){
+    var input = inputs[i];
+
+    switch(input.getAttribute("data-test")){
+        case "first-name-input": input.value = "StefanBitches"; break;
+    }
+}
+
+var tbvn = 
+
 function random(){
 
 	rndmGe = Math.floor(Math.random() *2) + 1;
