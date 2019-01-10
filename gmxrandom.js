@@ -3,7 +3,7 @@ function zahl(){
     alert(zahl);
 }
 
-function set(){
+function setvorname(){
 	var gid = function(name) {return document.getElementById(name)};
 
 var inputs = document.getElementsByClassName("inputs");
