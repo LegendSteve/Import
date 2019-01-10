@@ -3,7 +3,8 @@ function zahl(){
     alert(zahl);
 }
 
-var gid = function(name) {return document.getElementById(name)};
+function set(){
+	var gid = function(name) {return document.getElementById(name)};
 
 var inputs = document.getElementsByClassName("inputs");
 
@@ -17,8 +18,8 @@ for(i = 0; i < inputs.length; i++){
         case "first-name-input": input.value = "StefanBitches"; break;
     }
 }
+}
 
-var tbvn = 
 
 function random(){
 
