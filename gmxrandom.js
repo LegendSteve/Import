@@ -5,6 +5,6 @@ function zahl(){
     alert(zahl);
 }
 
-function RandomAusfüllen(){
+function RandomAusfuellen(){
     console.log("Hallo");
 }
