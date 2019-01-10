@@ -5,7 +5,7 @@ function zahl(){
     alert(zahl);
 }
 
-function RandomAusfüllen(){
+function random(){
 
 	rndmGe = Math.floor(Math.random() *2) + 1;
 	if(rndmGe == 1){
