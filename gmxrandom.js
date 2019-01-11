@@ -3,10 +3,13 @@ function zahl(){
     alert(zahl);
 }
 
-function setvorname(){
-	var gid = function(name) {return document.getElementById(name)};
+var gid = function(name) {return document.getElementById(name)};
 
-var inputs = document.getElementsByClassName("inputs");
+function zeigeinputs(){
+	var inputs = document.getElementsByTagName("input");
+	alert(inputs);
+}
+
 
 console.log(inputs);
 
@@ -18,7 +21,7 @@ for(i = 0; i < inputs.length; i++){
         case "first-name-input": input.value = "StefanBitches"; break;
     }
 }
-}
+
 
 
 function random(){
