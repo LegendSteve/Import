@@ -7,11 +7,8 @@ var gid = function(name) {return document.getElementById(name)};
 
 function zeigeinputs(){
 	var inputs = document.getElementsByTagName("input");
-	alert(inputs);
+	console.log(inputs);
 }
-
-
-console.log(inputs);
 
 for(i = 0; i < inputs.length; i++){
     var input = inputs[i];
