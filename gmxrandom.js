@@ -1,7 +1,7 @@
 var lsg = function(name) {return localStorage.getItem(name)};
 
 function randomvorhanden(){
-    var inputs = document.getElementsByTagName("inputs");
+    var inputs = document.getElementsByTagName("input");
 
     console.log(inputs);
 
