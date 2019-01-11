@@ -5,7 +5,7 @@ function zahl(){
 
 var gid = function(name) {return document.getElementById(name)};
 
-function zeigeinputs(){
+function zeigen(){
 	var inputs = document.getElementsByTagName("input");
 	alert(inputs);
 }
