@@ -1,13 +1,27 @@
 var lsg = function(name) {return localStorage.getItem(name)};
 var tagn = function(name) {return document.getElementsByTagName(name)};
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 if (document.readyState === "complete") {
     randomausfüllen();
+}
+
+async function norobot(){
+    var vn = lsg("vorname").split("");
+    for(i = 0; i < vn.length; i++){
+        cl(vn[i]);
+        await sleep(500);
+    }
 }
 
 //Die Daten aus localStorage nehmen und in die Textfelder einfüllen
 function randomausfüllen(){
     
+    norobot();
+
     var inputs = tagn("input");
     var selects = tagn("select");
 
@@ -39,6 +53,8 @@ function randomausfüllen(){
 
     inputs[19].focus();
     inputs[19].scrollIntoView();
+
+    tagn("onereg-form-row")[11].setAttribute("class","password-recovery__email-form-row")
 
     selects[0].value = lsg("land");
     selects[1].value = lsg("shortland").toUpperCase();
