@@ -37,6 +37,9 @@ function randomausfüllen(){
 
     inputs[17].checked = true;
 
+    inputs[19].focus();
+    inputs[19].scrollIntoView();
+
     selects[0].value = lsg("land");
     selects[1].value = lsg("shortland").toUpperCase();
 }
